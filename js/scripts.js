@@ -24,15 +24,42 @@ function addToCarritoItem(e){
   addItemCarrito(newItem)
 }
 
+const btnMostrarAlert = document.getElementById("btn-mostrar-alert");
+      btnMostrarAlert.onclick = mostrarAlert;
+
+      function mostrarAlert (){
+      Swal.fire({
+        icon: 'success',
+        title: 'Productor agregado al carrito!',
+        
+      })
+    }
+
+    const btnMostrarAlert2 = document.getElementById("btn-mostrar-alert-2");
+      btnMostrarAlert2.onclick = mostrarAlert;
+
+      function mostrarAlert (){
+      Swal.fire({
+        icon: 'success',
+        title: 'Productor agregado al carrito!',
+        
+      })
+    }
+
+    const btnMostrarAlert3 = document.getElementById("btn-mostrar-alert-3");
+      btnMostrarAlert3.onclick = mostrarAlert;
+
+      function mostrarAlert (){
+      Swal.fire({
+        icon: 'success',
+        title: 'Productor agregado al carrito!',
+        
+      })
+    }
 
 function addItemCarrito(newItem){
 
-  const alert = document.querySelector('.alert')
-
-  setTimeout( function(){
-    alert.classList.add('hide')
-  }, 2000)
-    alert.classList.remove('hide')
+ 
 
   const InputElemnto = tbody.getElementsByClassName('input__elemento')
   for(let i =0; i < carrito.length ; i++){
